@@ -9,9 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <title>Blog CBA Consult</title>
-      </head>
+
       <body>
 
         {children}

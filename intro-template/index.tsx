@@ -47,6 +47,21 @@ export default memo(function IntroTemplate() {
     <div className="flex justify-center border border-gray-200 bg-gray-50">
       <div className="mb-8 mt-20 grid max-w-screen-2xl grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-16 md:gap-y-32 lg:gap-x-32 ">
         <div className="self-center">
+        <!-- Embed on page - Microsoft Authorized Refurbisher -->
+<div id="dccn-e64f665b-7b80-4f33-9b7b-b48a822418f3"></div>
+<script type='text/javascript'>
+    (function() {
+        const scriptId = 'e64f665b-7b80-4f33-9b7b-b48a822418f3';
+        const bannerHeight = 90; /* Override banner height */
+        const bannerWidth = 728; /* Override banner witdh */
+        const embedType = 'inline'; /* Set embed type: inline, banner */
+
+        const script = document.createElement('script');
+        script.defer = true;
+        script.src = `https://dmc.partner.microsoft.com/dccn/api/embedded-campaigns/js?id=${scriptId}&height=${bannerHeight}&width=${bannerWidth}&embedType=${embedType}`;
+        document.body.append(script);
+    })();
+</script>
           <Image
             alt="An illustration of a browser window, a terminal window, the Sanity.io logo and the NextJS logo"
             src={cover}
