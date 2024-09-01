@@ -4,7 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <script
+        {/* Existing Aptrinsic script */}
+        <script
           dangerouslySetInnerHTML={{
             __html: `
               (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
@@ -15,11 +16,28 @@ export default function Document() {
             `,
           }}
         />
+
+        {/* Google Analytics (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-R1GWDYQTDT"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-R1GWDYQTDT'); 
+            `,
+          }}
+        />
       </Head>
       <body className="bg-white text-black">
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
