@@ -1,0 +1,9 @@
+.timeline {
+    margin-top: 200px; /* Adjust as needed */
+    width: 100%; /* Or a specific width like 80% */
+  }
+  
+/* Option 2: Target a container around the Timeline */
+.timeline-container { /* If you have a wrapping div */
+    padding-top: 100px; /* Adjust the value as needed */
+  }

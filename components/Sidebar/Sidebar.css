@@ -1,0 +1,44 @@
+/* Sidebar.css */
+
+/* Base styles for the sidebar (hidden on larger screens) */
+.sidebar {
+    @apply fixed top-0 left-0 h-screen bg-gray-800 z-40 transform transition-transform duration-300 ease-in-out -translate-x-full;
+  }
+  
+  /* Styles when the sidebar is open */
+  .sidebar.open {
+    @apply translate-x-0;
+  }
+  
+  /* Styles for medium and larger screens */
+  @media (min-width: 768px) {
+    .sidebar {
+      @apply translate-x-0 w-64;
+    }
+  }
+  
+  /* Close button styles */
+  .sidebar .close-button {
+    @apply md:hidden absolute top-4 right-4 text-white;
+  }
+  
+  /* Sidebar list styles */
+  .sidebar ul {
+    @apply pt-16 md:pt-0;
+  }
+  
+  /* Sidebar list item styles */
+  .sidebar li {
+    @apply mb-4;
+  }
+  
+  /* Sidebar link styles */
+  .sidebar a {
+    @apply flex items-center px-4 py-2 text-white hover:bg-gray-700 hover:text-white;
+  }
+  
+  /* Icon styles (adjust spacing as needed) */
+  .sidebar a span {
+    @apply mr-3;
+  }
+  
