@@ -35,7 +35,6 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
           process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''
         }/api/og?${new URLSearchParams({ title: ogImageTitle })}`}
       />
-
     </Head>
   )
 }
