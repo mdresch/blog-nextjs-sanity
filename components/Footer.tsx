@@ -10,16 +10,16 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-lg font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4"> 
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/cbaconsult" target="_blank" rel="noopener noreferrer">
                 <FaFacebook size={24} className="text-gray-400 hover:text-white" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/consult_cba" target="_blank" rel="noopener noreferrer">
                 <FaTwitter size={24} className="text-gray-400 hover:text-white" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/cbaconsult" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={24} className="text-gray-400 hover:text-white" />
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/cbagroup/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={24} className="text-gray-400 hover:text-white" />
               </a>
             </div>

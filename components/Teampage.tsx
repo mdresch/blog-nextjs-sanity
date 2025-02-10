@@ -5,7 +5,7 @@ import TeamMemberCard from './TeamMemberCard';
 const TeamPage = () => {
   const [teamMembers] = useState([
     {
-      picture: '/images/menno.jpg',
+      picture: '/menno.jpg',
       name: 'Menno Drescher',
       role: 'Founder',
       bio: 'Menno Drescher is the visionary founder of CBA Consult, with a passion for innovation and excellence.',

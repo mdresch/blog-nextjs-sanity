@@ -3,7 +3,7 @@ import BlogLayout from 'components/BlogLayout';
 
 const About = () => {
   return (
-    <BlogLayout>
+    <BlogLayout preview={false}>
     <div>
       <h1>About Me</h1>
       <p>This is where you can write about yourself or your blog.</p>

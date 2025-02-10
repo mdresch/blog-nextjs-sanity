@@ -1,7 +1,7 @@
 // components/BlogLayout.tsx
 import AlertBanner from 'components/AlertBanner';
 import React, { useState } from 'react';
-import { FaBriefcase, FaChartLine, FaEnvelope, FaUsers } from 'react-icons/fa';
+import { FaBriefcase, FaChartLine, FaEnvelope, FaUsers, FaCog, FaUser, FaCreditCard, FaBell } from 'react-icons/fa';
 
 import Footer from './Footer';
 import Navbar from './Navbar/Navbar';
@@ -43,6 +43,33 @@ const subscribedItems: SidebarItem[] = [
   },
 ];
 
+const settingsNavBar: SidebarItem[] = [
+  {
+    id: 1,
+    title: 'Settings',
+    icon: <FaCog size={20}/>,
+    link: '/settings',
+  },
+  {
+    id: 2,
+    title: 'Profile',
+    icon: <FaUser size={20}/>,
+    link: '/settings/profile',
+  },
+  {
+    id: 3,
+    title: 'Account',
+    icon: <FaCreditCard size={20}/>,
+    link: '/settings/account',
+  },
+  {
+    id: 4,
+    title: 'Notifications',
+    icon: <FaBell size={20}/>,
+    link: '/settings/notifications',
+  },
+]
+
 export default function BlogLayout({
   preview,
   loading,
@@ -76,7 +103,8 @@ export default function BlogLayout({
           {children}
         </main>
           <Sidebar 
-          items={subscribedItems} 
+          items={subscribedItems}
+          settings={settingsNavBar} 
           isOpen={isSidebarOpen} 
           toggleSidebar={toggleSidebar} 
           />
